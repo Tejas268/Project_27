@@ -4,11 +4,11 @@ const World = Matter.World;
 const Bodies = Matter.Bodies;
 const Body = Matter.Body;
 const Render = Matter.Render;
-const Constraint = Matter.Constraint;
+const Constraint = Matter.Constraint; 
 
-var bobObject1,bobObject2,bobObject3, bobObject4,bobObject5, roof;
-var rope1,rope2,rope3, rope4,rope5;
-var world;
+var bob1, bob2, bob3, bob4, bob5, roof;
+var rope1, rope2, rope3, rope4, rope5;
+var world, engine;
 
 
 function setup() {
@@ -28,11 +28,11 @@ function setup() {
 	bob5 = new bob(480,575,40);
 	
 	
-	rope1 = new rope(bob1.body);
-	rope2 = new rope(bob2.body);
-	rope3 = new rope(bob3.body);
-	rope4 = new rope(bob4.body);
-	rope5 = new rope(bob5.body);
+	rope1 = new rope(bob1.body, roof.body);
+	rope2 = new rope(bob2.body, roof.body);
+	rope3 = new rope(bob3.body, roof.body);
+	rope4 = new rope(bob4.body, roof.body);
+	rope5 = new rope(bob5.body, roof.body);
 	
 	
 	Engine.run(engine);
