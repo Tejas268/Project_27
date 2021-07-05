@@ -64,7 +64,7 @@ function draw() {
 
 function up() {
 	if (keyCode === UP_ARROW) {
-		Body.applyForce(bob1.body,bob1.position,{x : -50, y : -45});
+		Body.applyForce(bob1.body,bob1.body.position,{x : -50, y : -45});
 	}
 }
 
