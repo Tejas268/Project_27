@@ -18,14 +18,13 @@ function setup() {
 	engine = Engine.create();
 	world = engine.world;
 
-	roofO = new roof(400,250,230,20);
-
 	bob1 = new bob(320,575,40);
 	bob2 = new bob(360,575,40);
 	bob3 = new bob(400,575,40);
 	bob4 = new bob(440,575,40);
 	bob5 = new bob(480,575,40);
 	
+	roofO = new roof(400,250,230,20);
 	
 	rope1 = new rope(bob1.body, roofO.body, -80, 0);
 	rope2 = new rope(bob2.body, roofO.body, -40, 0);
